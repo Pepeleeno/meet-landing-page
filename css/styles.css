@@ -148,6 +148,7 @@ span {
   text-align: center;
   line-height: 16px;
   margin-top: 90px;
+  letter-spacing: 4px;
 }
 
 .product-info :nth-child(2) {
@@ -162,7 +163,7 @@ span {
 .product-info :nth-child(3) {
   color: #87879D;
   font-size: 1.125rem;
-  margin-top: 42px;
+  margin-top: 40px;
   text-align: center;
   line-height: 26px;
   margin-bottom: 184px;
