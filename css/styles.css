@@ -49,6 +49,7 @@ header p {
   border-radius: 29px;
   font-size: 1rem;
   font-weight: 900;
+  letter-spacing: 0.5px;
   margin-right: 16px;
   cursor: pointer;
   transition: background-color 0.25s;
@@ -70,6 +71,7 @@ span {
   border-style: none;
   color: white;
   font-size: 1rem;
+  letter-spacing: 0.5px;
   font-weight: 900;
   cursor: pointer;
   transition: background-color 0.25s;
@@ -98,7 +100,7 @@ span {
 }
 
 .circle p {
-  padding: 15px 19px;
+  padding: 17px 19px;
   font-size: 16px;
   font-weight: 900;
   color: #000000;
@@ -171,17 +173,51 @@ span {
 
 /* FOOTER  */
 
+.circle-second {
+  width: 56px;
+  height: 56px;
+  border: 1px solid #e1e1eb;
+  color: #87879D;
+  /* margin: auto; */
+  position: absolute;
+  top: 1535px;
+  left: 49.5%;
+  border-radius: 28px;
+  /* position: relative; */
+  background-color: white;
+  z-index: 1;
+}
+.circle-second p {
+  padding: 17px 17px;
+  font-size: 16px;
+  font-weight: 900;
+  color: #87879D;
+}
+
+.circle-second:before {
+  content: "";
+  display: block;
+  position: absolute;
+  z-index: 1;
+  bottom: 100%;
+  left: 50%;
+  border: 1px solid #e1e1eb;;
+  border-width: 0 0 0 1px;
+  width: 1px;
+  height: 84px;
+}
+
 footer {
+  z-index: -2;
+}
+
+.footer-wrapper {
   display: flex;
   flex-direction: row;
   height: 308px;
   color: white;
   align-items: center;
   justify-content: center;
-  /* background-color: red; */
-  /* background-color: rgba(77, 150, 169, 0.3);
-  background-image: url('/img/desktop/image-footer.jpg');
-  background-size: cover; */
   background: linear-gradient(rgba(77, 150, 169, 0.8), rgba(77, 150, 169, 0.8)), url('/img/desktop/image-footer.jpg');
   background-repeat: no-repeat;
   background-size: cover;
@@ -193,7 +229,7 @@ footer h3 {
   max-width: 350px;
 }
 
-footer p {
+.footer-wrapper p {
   font-size: 1.125rem;
   max-width: 350px;
   margin-left: 125px;
